@@ -16,9 +16,6 @@ class ReportsController extends Controller
         //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         //
@@ -56,9 +53,6 @@ class ReportsController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Report $reports)
     {
         //

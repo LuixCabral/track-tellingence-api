@@ -5,6 +5,9 @@ namespace App\Providers;
 use App\Repository\ActivityRepository;
 use App\Repository\ActivityRepositoryImp;
 use Illuminate\Support\ServiceProvider;
+use SocialiteProviders\Manager\SocialiteWasCalled;
+use SocialiteProviders\Strava\StravaExtendSocialite;
+use Illuminate\Support\Facades\Event;
 
 class ActivityServiceProvider extends ServiceProvider
 {
@@ -16,5 +19,6 @@ class ActivityServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+
     }
 }
