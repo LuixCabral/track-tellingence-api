@@ -17,7 +17,7 @@ class ConnectionsController extends Controller
 // No seu Service ou Controller
     public function redirect()
     {
-        $userId = 3;
+        $userId = auth()->id();
 
         $url = Socialite::driver('strava')
             ->stateless()

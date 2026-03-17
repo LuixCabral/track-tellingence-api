@@ -3,8 +3,6 @@
 namespace App\Services;
 
 use App\Repository\ConnectionsRepositoryImp;
-use Carbon\Carbon;
-use Illuminate\Testing\Exceptions\InvalidArgumentException;
 use Laravel\Socialite\Socialite;
 
 class StravaService

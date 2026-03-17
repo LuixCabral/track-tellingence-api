@@ -29,7 +29,7 @@ class RunCoach implements Agent, Conversational, HasStructuredOutput
     public function schema(JsonSchema $schema): array
     {
         return [
-            'value' => $schema->string()->required(),
+            'response' => $schema->string()->required(),
         ];
     }
 }
