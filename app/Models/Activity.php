@@ -11,16 +11,18 @@ class Activity extends Model
     protected $fillable = [
         'user_id',
         'activity_title',
-        'activity_description',
         'activity_type',
-        'average_pace',
-        'average_bpm',
+        'activity_description',
         'distance',
-        'activity_date',
+        'moving_time',
+        'elapsed_time',
+        'total_elevation_gain',
+        'average_speed',
+        'average_heartrate',
+        'max_heartrate',
     ];
 
     protected $casts= [
-        'activity_date' => 'datetime',
         'created_at' => 'datetime:Y-m-d H:i:s',
         'updated_at' => 'datetime:Y-m-d H:i:s',
     ];

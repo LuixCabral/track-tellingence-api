@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\DTOs\ActivityDTO;
+use App\DTOs\ActivityRequestDTO;
 use App\Services\ActivityService;
 use Illuminate\Http\Request;
 
@@ -19,7 +19,7 @@ class ActivityController extends Controller
     }
 
     public function store(Request $request){
-        $dto = ActivityDTO::fromRequest($request);
+        $dto = ActivityRequestDTO::fromRequest($request);
 
         $activity = $this->activityService->saveUserNewActivity($dto);
         return response()->json($activity,201);

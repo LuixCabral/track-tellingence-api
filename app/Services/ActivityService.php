@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Services;
-use App\DTOs\ActivityDTO;
+use App\DTOs\ActivityRequestDTO;
 use App\Repository\ActivityRepository;
 use Mockery\Exception\InvalidArgumentException;
 
@@ -23,7 +23,7 @@ class ActivityService
         return $activities;
     }
 
-    public function saveUserNewActivity(ActivityDTO $activity){
+    public function saveUserNewActivity(ActivityRequestDTO $activity){
         return $this->activityRepository->saveUserNewActivity($activity);
     }
 
